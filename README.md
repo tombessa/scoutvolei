@@ -1,6 +1,6 @@
 # Scout Vôlei TRT
 
-Painel móvel para registrar placar e indicadores de partidas de vôlei do TRT.
+Aplicativo móvel e offline para registrar placar e indicadores de partidas de vôlei do TRT.
 
 ## Fluxo
 
@@ -20,9 +20,13 @@ Painel móvel para registrar placar e indicadores de partidas de vôlei do TRT.
 
 Os sets encerrados podem ser tocados para consultar suas estatísticas. A exportação gera planilha Excel ou relatório em PDF. No PDF, os detalhes ponto a ponto são opcionais.
 
-## Armazenamento
+## Funcionamento offline e armazenamento
 
-Os dados ficam no armazenamento local do navegador. Exporte a partida antes de limpar os dados do navegador ou iniciar uma nova partida.
+Cada alteração é salva imediatamente no próprio celular em duas camadas: armazenamento local e IndexedDB. O Service Worker mantém a interface disponível quando a conexão cai ou o aparelho fica sem sinal.
+
+Depois do primeiro acesso online, o aplicativo pode ser aberto novamente sem internet. Quando o navegador oferecer a opção **Instalar app**, use-a para adicionar o Scout Vôlei à tela inicial.
+
+Os dados não são enviados para servidores externos. A planilha Excel e o PDF são exportações manuais. Exporte a partida antes de limpar os dados do navegador, desinstalar o aplicativo ou iniciar uma nova partida.
 
 ## Vercel
 
