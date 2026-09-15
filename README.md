@@ -14,6 +14,7 @@ Aplicativo móvel e offline para registrar placar e indicadores de partidas de v
 - Pontos de ace
 - Aces sofridos
 - Erros de saque
+- Erros de falta
 - Erros de ataque ou bloqueio
 - Pontos de ataque
 - Pontos de bloqueio
